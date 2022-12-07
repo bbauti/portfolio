@@ -24,6 +24,7 @@
     "ipx": "^1.0.0-2",
     "nuxt-buefy": "^0.4.24",
     "sass": "^1.56.1",
-    "sass-loader": "^10.4.1"
+    "sass-loader": "^10.4.1",
+    "vue-scrollto": "^2.20.0"
   }
 }

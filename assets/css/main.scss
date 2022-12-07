@@ -20,10 +20,11 @@ Inicio de Variables
 
 $fondoOscuro: #070707;
 $textoOscuro: #f5f5f5;
-$textoSecundarioOscuro: #e0e0e0;
+$textoSecundarioOscuro: #616161;
 
 $small: 480px;
 $big: 769px;
+$hd: 900px;
 
 /*
 
@@ -57,6 +58,7 @@ Inicio de Navbar
 .navbar {
     background-color: rgba(0, 0, 0, 0);
     margin-top: 1em;
+    z-index: 100;
 }
 
 .navbar-brand {
@@ -81,6 +83,15 @@ a.navbar-item:focus {
     margin-right: 1em;
 }
 
+.navbar-menu {
+    margin-right: 0 !important;
+}
+
+.main {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 /*
 
 Inicio de Clases Generales
@@ -92,7 +103,7 @@ Inicio de Clases Generales
 .titulo {
     align-items: center;
     text-align: center;
-    color: $textoSecundarioOscuro;
+    color: $textoOscuro;
     margin: 5vw;
     font-size: 3.5vw;
 }
@@ -114,6 +125,7 @@ Inicio de Clases Generales
         transform: scale(1.1) translateY(-10px);
         text-shadow: 0px 0px 20px #ffffff5a;
         outline-offset: 10px;
+        letter-spacing: 0.65vw;
     }
 }
 
@@ -127,12 +139,51 @@ Inicio de Clases Generales
 }
 
 .developer {
-    color: #1b0ce9;
-    transition: ease-in(3s)
+    color: $textoOscuro;
+    transition: .3s ease-in-out;
+    &:hover {
+        color: #1b0ce9;
+    }
+}
+
+.columnas {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(64px, 100%/5)), 1fr));
+    margin-bottom: 10vh;
+    @media screen and (max-width: $small) {
+        grid-template-columns: repeat(1, 1fr);;
+    }
+}
+
+.articulo {
+    background: #0e1217;
+    box-shadow: none;
+    display: flex;
+    position: relative;
+    padding: 0.5rem;
+    flex-direction: column;
+    border: 1px solid #a8b3cf33;
+    border-radius: 16px;
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #a8b3cf86;
+    }
+}
+
+.textoArticulo {
+    font-family: system-ui;
+    font-weight: 700;
+    color: $textoOscuro;
+    font-size: 1.2em;
 }
 
 .artist {
-    color: #b70ae2;
+    color: $textoOscuro;
+    transition: .3s ease-in-out;
+    &:hover {
+        color: #b70ae2;
+    };
 }
 
 .header{
@@ -140,7 +191,7 @@ Inicio de Clases Generales
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -148,13 +199,19 @@ Inicio de Clases Generales
     align-items: center;
     text-align: center;
     color: $textoSecundarioOscuro;
-    margin: 1vw;
     letter-spacing: 0.1vw;
+}
+
+.photo_section{
+    margin-top:5em;
+    z-index: 51;
+    position:relative;
 }
 
 .img {
     border-radius: 30px;
     margin: 0 1vw;
+    z-index: 100;
     &--right {
         @extend .img;
         text-align: left;

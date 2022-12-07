@@ -11,6 +11,7 @@ export default {
       { hid: "description", name: "description", content: "" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [{src: 'https://tarptaeya.github.io/repo-card/repo-card.js'}],
     bodyAttrs: {
       class: 'noise'
     },
@@ -42,6 +43,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/image',
+    'vue-scrollto/nuxt',
   ],
 
   styleResources: {

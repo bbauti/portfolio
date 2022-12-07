@@ -23,40 +23,39 @@
 	</nav> -->
 
 
-    <b-navbar fixed-top>
+    <b-navbar fixed-top style="z-index:200;">
         <template #brand>
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            <b-navbar-item v-scroll-to="{
+                        el: '#header',
+                        duration: 500,
+                        easing: 'ease-in-out'
+                    }">
                 <p class="brillo">BBAUTI</p>
             </b-navbar-item>
         </template>
-        <!-- <template #start>
-            <b-navbar-item href="#">
-                Home
-            </b-navbar-item>
-            <b-navbar-item href="#">
-                Documentation
-            </b-navbar-item>
-            <b-navbar-dropdown label="Info">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
-        </template> -->
-
         <template #end>
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <b-navbar-item tag="router-link" :to="{ path: '/about' }">
-                        Acerca De
-                    </b-navbar-item>
-                    <b-navbar-item tag="router-link" :to="{ path: '/programming' }">
+                    <b-navbar-item v-scroll-to="{
+                        el: '#developer',
+                        duration: 500,
+                        easing: 'ease-in-out'
+                    }">
                         Programacion
                     </b-navbar-item>
-                    <b-navbar-item tag="router-link" :to="{ path: '/design' }">
+                    <b-navbar-item v-scroll-to="{
+                        el: '#artist',
+                        duration: 500,
+                        easing: 'ease-in-out'
+                    }">
                         Arte
+                    </b-navbar-item>
+                    <b-navbar-item v-scroll-to="{
+                        el: '#contact',
+                        duration: 500,
+                        easing: 'ease-in-out'
+                    }">
+                        Contactame
                     </b-navbar-item>
                 </div>
             </b-navbar-item>
