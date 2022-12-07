@@ -23,9 +23,9 @@
 	</nav> -->
 
 
-    <b-navbar>
+    <b-navbar fixed-top>
         <template #brand>
-            <b-navbar-item tag="router-link"  :to="{ path: '/' }">
+            <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 <p class="brillo">BBAUTI</p>
             </b-navbar-item>
         </template>

@@ -135,12 +135,34 @@ Inicio de Clases Generales
     color: #b70ae2;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
 .subtitulo {
     align-items: center;
     text-align: center;
     color: $textoSecundarioOscuro;
-    margin: 5vw;
+    margin: 1vw;
     letter-spacing: 0.1vw;
+}
+
+.img {
+    border-radius: 30px;
+    margin: 0 1vw;
+    &--right {
+        @extend .img;
+        text-align: left;
+    };
+    &--left {
+        @extend .img;
+        text-align: right;
+    };
 }
 
 /*
@@ -242,8 +264,6 @@ Inicio de Responsive
         margin-top: 10vw;
         font-size: 8vw;
     }
-
-    .borde {}
 
     .navbar-brand {
         justify-content: center;
