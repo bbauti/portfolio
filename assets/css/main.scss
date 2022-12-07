@@ -1,0 +1,256 @@
+@import "~bulma/sass/utilities/_all";
+
+
+$navbar-item-hover-color: none;
+$navbar-item-hover-background-color: none;
+$navbar-item-active-color: none;
+$navbar-item-active-background-color: none;
+
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+/*
+
+Inicio de Variables
+Inicio de Variables
+Inicio de Variables
+
+*/
+
+$fondoOscuro: #070707;
+$textoOscuro: #f5f5f5;
+$textoSecundarioOscuro: #e0e0e0;
+
+$small: 480px;
+$big: 769px;
+
+/*
+
+Inicio de Root
+Inicio de Root
+Inicio de Root
+
+*/
+
+@font-face {
+    font-family: "Oxygen";
+    src: local("Oxygen"),
+        url(~assets/rifton.ttf) format("truetype");
+}
+
+html,
+body {
+    background-color: $fondoOscuro;
+    font-family: "Oxygen";
+    cursor: default;
+}
+
+/*
+
+Inicio de Navbar
+Inicio de Navbar
+Inicio de Navbar
+
+*/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 1em;
+}
+
+.navbar-brand {
+    color: hsl(229deg, 53%, 53%);
+    font-size: 2em;
+    margin-left: 1em;
+
+    &:hover {
+        text-shadow: 0px 0px 70px #2305a8;
+    }
+}
+
+a.navbar-item:focus {
+    background-color: none;
+}
+
+.brillo {
+    color: hsl(229deg, 53%, 53%);
+}
+
+.navbar-end {
+    margin-right: 1em;
+}
+
+/*
+
+Inicio de Clases Generales
+Inicio de Clases Generales
+Inicio de Clases Generales
+
+*/
+
+.titulo {
+    align-items: center;
+    text-align: center;
+    color: $textoSecundarioOscuro;
+    margin: 5vw;
+    font-size: 3.5vw;
+}
+
+.borde {
+    color: transparent;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+    font-weight: 400;
+    width: fit-content;
+    block-size: fit-content;
+    transition: all .3s ease-in-out;
+    font-size: larger;
+    letter-spacing: 0.5vw;
+    &:hover {
+        color: rgb(255, 255, 255);
+        transform: scale(1.1) translateY(-10px);
+        text-shadow: 0px 0px 20px #ffffff5a;
+        outline-offset: 10px;
+    }
+}
+
+.gallery {
+    border-radius: 20px;
+}
+
+.resaltar {
+    font-weight: bolder;
+    color: $textoOscuro;
+}
+
+.developer {
+    color: #1b0ce9;
+    transition: ease-in(3s)
+}
+
+.artist {
+    color: #b70ae2;
+}
+
+.subtitulo {
+    align-items: center;
+    text-align: center;
+    color: $textoSecundarioOscuro;
+    margin: 5vw;
+    letter-spacing: 0.1vw;
+}
+
+/*
+
+Inicio de Ruido
+Inicio de Ruido
+Inicio de Ruido
+
+*/
+
+body {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.noise::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    -webkit-animation: tvShow .2s infinite steps(1, end);
+    animation: tvShow .2s infinite steps(1, end);
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+}
+
+body.noise {
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+@-webkit-keyframes tvShow {
+    0% {
+        background-image: url(../img/noise.png)
+    }
+
+    20% {
+        background-image: url(../img/noise2.png)
+    }
+
+    40% {
+        background-image: url(../img/noise3.png)
+    }
+
+    60% {
+        background-image: url(../img/noise4.png)
+    }
+
+    80% {
+        background-image: url(../img/noise2.png)
+    }
+
+    100% {
+        background-image: url(../img/noise4.png)
+    }
+}
+
+@keyframes tvShow {
+    0% {
+        background-image: url("/noise.png")
+    }
+
+    20% {
+        background-image: url("/noise2.png")
+    }
+
+    40% {
+        background-image: url("/noise3.png")
+    }
+
+    60% {
+        background-image: url("/noise4.png")
+    }
+
+    80% {
+        background-image: url("/noise2.png")
+    }
+
+    100% {
+        background-image: url("/noise4.png")
+    }
+}
+
+/*
+
+Inicio de Responsive
+Inicio de Responsive
+Inicio de Responsive
+
+*/
+
+@media screen and (max-width: $small) {
+    .titulo {
+        margin-top: 10vw;
+        font-size: 8vw;
+    }
+
+    .borde {}
+
+    .navbar-brand {
+        justify-content: center;
+    }
+
+    .b-navbar-item {
+        margin: 0 auto;
+    }
+}
+

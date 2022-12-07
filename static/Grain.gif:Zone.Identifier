@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221206%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221206T195243Z&X-Amz-Expires=86400&X-Amz-Signature=6a9f75aa4ca170cb574847e1f0e83f941881de60a85de3bf8fed47ab7d123aef&X-Amz-SignedHeaders=host&x-id=GetObject
+HostUrl=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f689880b-20d1-4261-a626-d253a304112d/Grain.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221206%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221206T195243Z&X-Amz-Expires=86400&X-Amz-Signature=6a9f75aa4ca170cb574847e1f0e83f941881de60a85de3bf8fed47ab7d123aef&X-Amz-SignedHeaders=host&x-id=GetObject

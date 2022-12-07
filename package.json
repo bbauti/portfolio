@@ -9,11 +9,20 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "buefy": "^0.9.22",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "vue-template-compiler": "^2.7.14"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
     "@nuxt/types": "^2.15.3",
-    "@nuxt/typescript-build": "^2.1.0"
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "bulma": "^0.9.4",
+    "ipx": "^1.0.0-2",
+    "nuxt-buefy": "^0.4.24",
+    "sass": "^1.56.1",
+    "sass-loader": "^10.4.1"
   }
 }

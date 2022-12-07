@@ -11,10 +11,18 @@ export default {
       { hid: "description", name: "description", content: "" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    bodyAttrs: {
+      class: 'noise'
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    // CSS file in the project
+    '@/assets/css/main.css',
+    // SCSS file in the project
+    '@/assets/css/main.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -26,16 +34,27 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
+    '@nuxtjs/style-resources',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxt/image',
+  ],
+
+  styleResources: {
+    scss: ['@/assets/css/main.scss'],
+    sass: [],
+    less: [],
+    stylus: [],
+    hoistUseStatements: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
   server: {
     host: "0.0.0.0",
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 5000,
   },
 };
