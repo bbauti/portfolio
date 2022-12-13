@@ -1,35 +1,11 @@
 <template>
-	<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<nuxt-link class="navbar-item delete_style" to="/">
-				<p class="brillo">BBAUTI</p>
-			</nuxt-link>
-		</div>
-
-		<div id="navbarBasicExample" class="navbar-menu">
-
-			<div class="navbar-end">
-				<nuxt-link class="navbar-item delete_style" to="/about">
-					<p class="brillo">Acerca De</p>
-				</nuxt-link>
-        <nuxt-link class="navbar-item delete_style" to="/programming">
-					<p class="brillo">Programacion</p>
-				</nuxt-link>
-        <nuxt-link class="navbar-item delete_style" to="/design">
-					<p class="brillo">Arte</p>
-				</nuxt-link>
-			</div>
-		</div>
-	</nav> -->
-
-
-    <b-navbar fixed-top style="z-index:200;">
+    <b-navbar fixed-top :class="{change_color: scrollPosition > 50}">
         <template #brand>
             <b-navbar-item v-scroll-to="{
-                        el: '#header',
-                        duration: 500,
-                        easing: 'ease-in-out'
-                    }">
+                el: '#header',
+                duration: 500,
+                easing: 'ease-in-out'
+            }">
                 <p class="brillo">BBAUTI</p>
             </b-navbar-item>
         </template>
@@ -62,3 +38,21 @@
         </template>
     </b-navbar>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+        scrollPosition:null,
+        };
+    },
+    mounted() {
+        window.addEventListener('scroll', this.updateScroll);
+    },
+    methods: {
+        updateScroll() {
+            this.scrollPosition = window.scrollY
+        }
+    }
+}
+</script>

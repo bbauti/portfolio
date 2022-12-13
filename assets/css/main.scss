@@ -57,8 +57,9 @@ Inicio de Navbar
 
 .navbar {
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 1em;
-    z-index: 100;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    z-index:200;
 }
 
 .navbar-brand {
@@ -69,6 +70,11 @@ Inicio de Navbar
     &:hover {
         text-shadow: 0px 0px 70px #2305a8;
     }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 a.navbar-item:focus {
@@ -152,8 +158,13 @@ Inicio de Clases Generales
     grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(64px, 100%/5)), 1fr));
     margin-bottom: 10vh;
     @media screen and (max-width: $small) {
-        grid-template-columns: repeat(1, 1fr);;
+        grid-template-columns: repeat(1, 1fr);
     }
+    @media screen and (min-width: $small) and (max-width: $big){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    align-items: center;
+    justify-content: center;
 }
 
 .articulo {
@@ -178,6 +189,58 @@ Inicio de Clases Generales
     font-size: 1.2em;
 }
 
+.subArticulo {
+    font-family: system-ui;
+    font-weight: 500;
+    color: $textoOscuro;
+    font-size: 1em;
+}
+
+.git {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    background: white;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+}
+
+.cuadrado{
+    margin-bottom: 1vw;
+    padding: 3vw;
+    border: 1px solid rgba(168, 179, 207, 0.2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.change_color {
+    transition: all .3s ease-in-out;
+    background-color: #000000cc;
+    backdrop-filter: blur(3px);
+}
+
+.contact {
+    &--up {
+        @extend .contact;
+        padding-bottom: 0px;
+        @media screen and (max-width: $big) {
+            padding-bottom: 0.75rem;
+        }
+    };
+    &--down {
+        @extend .contact;
+        padding-top: 0.75rem;
+    };
+}
+
+.centrarFlex {
+    display: flex;
+    align-items: center;
+}
 .artist {
     color: $textoOscuro;
     transition: .3s ease-in-out;
@@ -210,7 +273,6 @@ Inicio de Clases Generales
 
 .img {
     border-radius: 30px;
-    margin: 0 1vw;
     z-index: 100;
     &--right {
         @extend .img;
@@ -330,4 +392,3 @@ Inicio de Responsive
         margin: 0 auto;
     }
 }
-

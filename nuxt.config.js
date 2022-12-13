@@ -38,12 +38,14 @@ export default {
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
     '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/image',
     'vue-scrollto/nuxt',
+    '@nuxtjs/axios',
   ],
 
   styleResources: {
