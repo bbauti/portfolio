@@ -1,5 +1,5 @@
 <template>
-    <b-navbar fixed-top :class="{change_color: scrollPosition > 50}">
+    <b-navbar fixed-top :class="{change_color: scrollPosition > 50}" :mobile-burger="false" centered>
         <template #brand>
             <b-navbar-item v-scroll-to="{
                 el: '#header',

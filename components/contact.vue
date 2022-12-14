@@ -10,13 +10,10 @@
                     <div class="contact contact--up">
                         <div class="cuadrado">
                             <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Correo</label>
-                                </div>
                                 <div class="field-body">
                                     <div class="field is-narrow">
                                         <div class="control">
-                                            <input type="email" v-model="email" class="form-control input" placeholder="Correo" required>
+                                            <input type="email" v-model="email" class="form-control" placeholder="Correo" required>
                                         </div>
                                     </div>
                                 </div>
@@ -26,13 +23,10 @@
                     <div class="contact contact--down">
                         <div class="cuadrado" style="margin-bottom:0;">
                             <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Nombre</label>
-                                </div>
                                 <div class="field-body">
                                     <div class="field is-narrow">
                                         <div class="control">
-                                            <input type="text" v-model="name" class="form-control input" placeholder="Nombre" required>
+                                            <input type="text" v-model="name" class="form-control" placeholder="Nombre" required>
                                         </div>
                                     </div>
                                 </div>
@@ -42,14 +36,11 @@
                 </div>
                 <div class="column is-full-mobile">
                     <div class="cuadrado" style="height: 100%;">
-                        <div class="field" style="width:100%; height:100%;">
-                            <div class="field-label is-normal">
-                                <label class="label has-text-centered">Mensaje</label>
-                            </div>
-                            <div class="field-body">
+                        <div class="field">
+                            <div class="field-body" style="height:100%;">
                                 <div class="field">
-                                    <div class="control">
-                                        <textarea type="text" v-model="message" class="form-control textarea" placeholder="Mensaje" required></textarea>
+                                    <div class="control" style="height:100%;">
+                                        <textarea type="text" v-model="message" class="form-control" placeholder="Mensaje" required style="height:100%;" cols="24" rows="4" wrap="soft"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -57,9 +48,16 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="success" v-if="isSuccess">We received your submission, thank you!</div>
-            <button type="submit">Submit</button>
+            <div class="columns">
+                <div class="column">
+                    <div class="contact">
+                        <div :class="{'enviar--submit': isSuccess, 'enviar': !isSuccess }">
+                            <div class="success" v-if="isSuccess">Recibi tu consulta, gracias!</div>
+                            <button type="submit" class="boton--enviar" v-if="!isSuccess">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 </template>
