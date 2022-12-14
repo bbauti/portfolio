@@ -1,22 +1,37 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxtjs",
+    title: "bbauti",
     htmlAttrs: {
-      lang: "en",
+      lang: "es",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [{src: 'https://tarptaeya.github.io/repo-card/repo-card.js'}],
     bodyAttrs: {
       class: 'noise'
     },
   },
 
+  pwa: {
+    meta: {
+      name: "bbauti",
+      author: "Bautista Igarzabal",
+      description: "Portfolio de bbauti",
+      theme_color: "#fff",
+      lang: "es",
+      ogHost: "bbauti.com",
+    },
+    manifest: {
+      name: 'bbauti',
+      short_name: 'bbauti',
+      description: 'Portfolio de bbauti',
+      lang: 'es',
+      useWebmanifestExtension: false
+    },
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // CSS file in the project

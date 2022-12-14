@@ -11,7 +11,7 @@
                             <h3 class="textoArticulo">Portfolio</h3>
                         </div>
                         <div style="display: flex; flex-direction: column; margin: 0.5rem 1rem;">
-                            <h3 class="subArticulo">Estas en esta plicacion web, creada para demostrar mis habilidades.
+                            <h3 class="subArticulo">Estas en esta aplicacion web, creada para demostrar mis habilidades.
                             </h3>
                         </div>
                         <div class="git">
