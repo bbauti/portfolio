@@ -4,12 +4,40 @@
 			id="artist">
 			Mis diseños
 		</section>
-		<div class="columnas">
-			<section data-aos="zoom-in">
-				<article class="articulo">
-					<p>hola!</p>
-				</article>
-			</section>
+		<div class="columns is-multiline">
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <section data-aos="zoom-in" style="z-index: 199; position: relative;">
+                    <nuxt-picture
+                        src="/portfolio/cabeza2.webp"
+                        style="position: relative; z-index: 199;"
+                        :imgAttrs="{style:'border-radius:30px;'}"
+                    />
+			    </section>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <section data-aos="zoom-in" data-aos-delay="100" style="z-index: 199; position: relative;">
+                    <nuxt-picture
+                        src="/portfolio/cuerpo1.webp"
+                        :imgAttrs="{style:'border-radius:30px;'}"
+                    />
+			    </section>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <section data-aos="zoom-in" data-aos-delay="200" style="z-index: 199; position: relative;">
+                    <nuxt-picture
+                        src="/portfolio/psico2.webp"
+                        :imgAttrs="{style:'border-radius:30px;'}"
+                    />
+			    </section>
+            </div>
+            <div class="column is-one-quarter-desktop is-half-tablet">
+                <section data-aos="zoom-in" data-aos-delay="300" style="z-index: 199; position: relative;">
+                    <nuxt-picture
+                        src="/portfolio/spectre1.webp"
+                        :imgAttrs="{style:'border-radius:30px;'}"
+                    />
+			    </section>
+            </div>
 		</div>
         <!-- <section
                 data-aos="fade-right"

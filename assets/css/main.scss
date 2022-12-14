@@ -60,6 +60,9 @@ Inicio de Navbar
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     z-index:200;
+    &.is-fixed-top {
+        z-index:200;
+    }
 }
 
 .navbar-brand {
@@ -248,6 +251,7 @@ textarea {
 .boton{
     &--enviar {
         @extend .boton;
+        border-width: 0;
         width: 100%;
         height: 100%;
         padding: 3vw;
@@ -261,7 +265,7 @@ textarea {
 
 .change_color {
     transition: all .3s ease-in-out;
-    background-color: #000000cc;
+    background-color: rgb(0 0 0 / 26%);
     backdrop-filter: blur(3px);
 }
 

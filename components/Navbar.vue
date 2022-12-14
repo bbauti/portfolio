@@ -15,21 +15,24 @@
                     <b-navbar-item v-scroll-to="{
                         el: '#developer',
                         duration: 500,
-                        easing: 'ease-in-out'
+                        easing: 'ease-in-out',
+                        offset: -100
                     }">
                         Programacion
                     </b-navbar-item>
                     <b-navbar-item v-scroll-to="{
                         el: '#artist',
                         duration: 500,
-                        easing: 'ease-in-out'
+                        easing: 'ease-in-out',
+                        offset: -100
                     }">
                         Arte
                     </b-navbar-item>
                     <b-navbar-item v-scroll-to="{
                         el: '#contact',
                         duration: 500,
-                        easing: 'ease-in-out'
+                        easing: 'ease-in-out',
+                        offset: -100
                     }">
                         Contactame
                     </b-navbar-item>

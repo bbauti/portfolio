@@ -10,13 +10,15 @@
                     <a v-scroll-to="{
                         el: '#developer',
                         duration: 500,
-                        easing: 'ease-in-out'
+                        easing: 'ease-in-out',
+                        offset: -100
                     }" class="developer">desarrollador</a>
                     y
                     <a v-scroll-to="{
                         el: '#artist',
                         duration: 500,
-                        easing: 'ease-in-out'
+                        easing: 'ease-in-out',
+                        offset: -100
                     }" class="artist">artista</a>
                 </h1>
             </div>
@@ -28,7 +30,4 @@
 </template>
 
 <script>
-export default {
-    scrollToTop: true
-}
 </script>
