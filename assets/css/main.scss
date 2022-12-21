@@ -366,53 +366,53 @@ body.noise {
 
 @-webkit-keyframes tvShow {
     0% {
-        background-image: url(../img/noise.png)
+        background-image: url('~assets/noise.png')
     }
 
     20% {
-        background-image: url(../img/noise2.png)
+        background-image: url('~assets/noise2.png')
     }
 
     40% {
-        background-image: url(../img/noise3.png)
+        background-image: url('~assets/noise3.png')
     }
 
     60% {
-        background-image: url(../img/noise4.png)
+        background-image: url('~assets/noise4.png')
     }
 
     80% {
-        background-image: url(../img/noise2.png)
+        background-image: url('~assets/noise2.png')
     }
 
     100% {
-        background-image: url(../img/noise4.png)
+        background-image: url('~assets/noise4.png')
     }
 }
 
 @keyframes tvShow {
     0% {
-        background-image: url("/noise.png")
+        background-image: url('~assets/noise.png')
     }
 
     20% {
-        background-image: url("/noise2.png")
+        background-image: url('~assets/noise2.png')
     }
 
     40% {
-        background-image: url("/noise3.png")
+        background-image: url('~assets/noise3.png')
     }
 
     60% {
-        background-image: url("/noise4.png")
+        background-image: url('~assets/noise4.png')
     }
 
     80% {
-        background-image: url("/noise2.png")
+        background-image: url('~assets/noise2.png')
     }
 
     100% {
-        background-image: url("/noise4.png")
+        background-image: url('~assets/noise4.png')
     }
 }
 
