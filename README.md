@@ -1,24 +1,8 @@
----
-title: NuxtJS
-description: A basic NuxtJS app
-tags:
-  - nuxt
-  - typescript
----
+# Portfolio / bbauti
 
-# NuxtJS Example
+Hola! Este es mi portfolio. Hecho con Nuxt2.
 
-This example starts a basic [NuxtJS](https://nuxtjs.org/) app.
+## Como editar
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/lQQgLR)
-
-## ✨ Features
-
-- NuxtJS
-- TypeScript
-
-## 💁‍♀️ How to use
-
-- Click the Railway button to deploy the app
-- Clone the project and connect to it using `railway link`
-- Run your NuxtJS app locally using `railway run yarn dev`
+- Clonar repo
+- Para probar los cambios, ejecuta el comando `npm run dev`

@@ -1,7 +1,7 @@
 <template>
     <div id="contactSection">
         <section
-            style="margin-top:15vh; margin-bottom: 1vh; text-align: center;"
+            style="margin-top:15vh; margin-bottom: 5vh; text-align: center;"
             data-aos="fade-in"
             class="subtitulo"
 			id="contact">

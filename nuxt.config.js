@@ -34,9 +34,6 @@ export default {
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    // CSS file in the project
-    '@/assets/css/main.css',
-    // SCSS file in the project
     '@/assets/css/main.scss'
   ],
 
@@ -52,8 +49,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
-    '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
+    'nuxt-webpack-optimisations',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,15 +59,9 @@ export default {
     '@nuxt/image',
     'vue-scrollto/nuxt',
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
+    '@aceforth/nuxt-optimized-images',
   ],
-
-  styleResources: {
-    scss: ['@/assets/css/main.scss'],
-    sass: [],
-    less: [],
-    stylus: [],
-    hoistUseStatements: true,
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
