@@ -63,6 +63,10 @@ export default {
     '@aceforth/nuxt-optimized-images',
   ],
 
+  sitemap: {
+    hostname: 'https://bbauti.github.io/portfolio',
+    gzip: true,
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
