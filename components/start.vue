@@ -7,6 +7,7 @@
         <h1 class="subtitulo">
             {{ $t('a') }}
             <a v-scroll-to="{
+                container: 'html',
                 el: '#developer',
                 duration: 500,
                 easing: 'ease-in-out',
@@ -14,6 +15,7 @@
             }" class="developer">{{ $t('developer') }}</a>
             {{ $t('and') }}
             <a v-scroll-to="{
+                container: 'html',
                 el: '#artist',
                 duration: 500,
                 easing: 'ease-in-out',

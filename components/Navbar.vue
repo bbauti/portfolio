@@ -2,17 +2,21 @@
     <b-navbar fixed-top :class="{change_color: scrollPosition > 50}" :mobile-burger="false" centered>
         <template #brand>
             <b-navbar-item v-scroll-to="{
+                container: 'html',
                 el: '#header',
                 duration: 500,
                 easing: 'ease-in-out'
+
             }">
                 <p class="brillo">BBAUTI</p>
             </b-navbar-item>
+            <buttonNav />
         </template>
         <template #end>
             <b-navbar-item tag="div">
                 <div class="buttons">
                     <b-navbar-item v-scroll-to="{
+                        container: 'html',
                         el: '#developer',
                         duration: 500,
                         easing: 'ease-in-out',
@@ -21,14 +25,17 @@
                         {{ $t('programming') }}
                     </b-navbar-item>
                     <b-navbar-item v-scroll-to="{
+                        container: 'html',
                         el: '#artist',
                         duration: 500,
                         easing: 'ease-in-out',
+
                         offset: -100
                     }">
                         {{ $t('design') }}
                     </b-navbar-item>
                     <b-navbar-item v-scroll-to="{
+                        container: 'html',
                         el: '#contact',
                         duration: 500,
                         easing: 'ease-in-out',

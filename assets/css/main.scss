@@ -69,10 +69,29 @@ Inicio de Navbar
     color: hsl(229deg, 53%, 53%);
     font-size: 2em;
     margin-left: 1em;
+    margin-right: 1em;
+}
 
-    &:hover {
-        text-shadow: 0px 0px 70px #2305a8;
-    }
+.langbuttons {
+    font-size: 0.6em;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    top: 0.9rem;
+    right: 0.5vw;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
 }
 
 a {
@@ -86,6 +105,9 @@ a.navbar-item:focus {
 
 .brillo {
     color: hsl(229deg, 53%, 53%);
+    &:hover {
+        text-shadow: 0px 0px 70px #2305a8;
+    }
 }
 
 .navbar-end {
@@ -492,6 +514,7 @@ Inicio de Responsive
     .navbar-brand {
         justify-content: center;
         margin-left: 0;
+        margin-right: 0;
     }
 
     .b-navbar-item {

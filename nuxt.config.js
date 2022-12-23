@@ -62,6 +62,8 @@ export default {
     '@aceforth/nuxt-optimized-images',
     'nuxt-speedkit',
     '@nuxtjs/i18n',
+    'nuxt-viewport',
+    '@nuxtjs/composition-api/module',
   ],
 
   i18n: {
