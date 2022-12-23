@@ -13,6 +13,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/device": "^3.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/i18n": "^7.3.0",
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@twicpics/components": "^0.14.2",

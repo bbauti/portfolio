@@ -1,23 +1,24 @@
 <template>
     <div class="header" id="header">
+
         <h1 class="titulo">
-            Hola! Soy <span class="borde">Bautista Igarzabal</span>
+            {{ $t('welcome') }} <span class="borde">Bautista Igarzabal</span>
         </h1>
         <h1 class="subtitulo">
-            Un
+            {{ $t('a') }}
             <a v-scroll-to="{
                 el: '#developer',
                 duration: 500,
                 easing: 'ease-in-out',
                 offset: -100
-            }" class="developer">desarrollador</a>
-            y
+            }" class="developer">{{ $t('developer') }}</a>
+            {{ $t('and') }}
             <a v-scroll-to="{
                 el: '#artist',
                 duration: 500,
                 easing: 'ease-in-out',
                 offset: -100
-            }" class="artist">artista</a>
+            }" class="artist">{{ $t('artist') }}</a>
         </h1>
         <div id="stackSection">
             <h1 class="subtitulo" style="margin-bottom: 1vw">tech stack</h1>

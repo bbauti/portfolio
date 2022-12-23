@@ -1,7 +1,7 @@
 <template>
     <div id="projectsSection">
         <section style="margin-top:15vh; margin-bottom: 5vh;" data-aos="fade-in" class="subtitulo" id="developer">
-            Algunos de mis proyectos
+            {{ $t('proyects') }}
         </section>
         <div class="columnas">
             <section data-aos="zoom-in">
@@ -10,7 +10,7 @@
                             <h3 class="textoArticulo">Portfolio</h3>
                         </div>
                         <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                            <h3 class="subArticulo">Estas en esta aplicacion web, creada para demostrar mis habilidades.
+                            <h3 class="subArticulo">{{ $t('portfolioDesc') }}.
                             </h3>
                         </div>
                         <a title="Portfolio" href="https://github.com/bbauti/portfolio" target="_blank" rel="noopener noreferrer">
@@ -65,9 +65,7 @@
                         <span class="redirectIconWip" style="margin-left: auto;"><font-awesome-icon :icon="fas.faPersonDigging"/></span>
                     </div>
                     <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                        <h3 class="subArticulo">Aplicacion web con fines para el manejo de stock, creado usando la
-                            metodologia Agile y Scrum con un equipo de 7 personas. Cumpli las funciones de Developer y
-                            DevOps</h3>
+                        <h3 class="subArticulo">{{ $t('inventoryAppDesc') }}</h3>
                     </div>
                     <a title="InventoryApp" href="https://bitbucket.org/arrudeboy/inventory/src" target="_blank" rel="noopener noreferrer">
                         <div class="git">
@@ -120,16 +118,15 @@
             <section data-aos="zoom-in" data-aos-delay="200">
                 <article class="articulo">
                         <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                            <h3 class="textoArticulo">Ejercicios P5</h3>
-                            <a title="Ejercicios P5" href="https://bbauti.github.io/ejerciciosp5/" target="_blank" rel="noopener noreferrer" style="margin-left: auto;">
+                            <h3 class="textoArticulo">{{ $t('p5exercises') }}</h3>
+                            <a :title="$t('p5exercises')" href="https://bbauti.github.io/ejerciciosp5/" target="_blank" rel="noopener noreferrer" style="margin-left: auto;">
                                 <span class="redirectIcon"><font-awesome-icon :icon="fas.faUpRightFromSquare"/></span>
                             </a>
                         </div>
                         <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                            <h3 class="subArticulo">Sitio web estatico para ir a los diversos ejercicios que realice del
-                                curso introductorio de Plataforma 5.</h3>
+                            <h3 class="subArticulo">{{ $t('p5exercisesDesc') }}</h3>
                         </div>
-                        <a title="Ejercicios P5" href="https://github.com/bbauti/ejerciciosp5" target="_blank" rel="noopener noreferrer">
+                        <a :title="$t('p5exercises')" href="https://github.com/bbauti/ejerciciosp5" target="_blank" rel="noopener noreferrer">
                             <div class="git">
                                 <div class="centrarFlex">
                                         <svg style="fill: #586069; margin-right: 8px;" viewBox="0 0 16 16" version="1.1"
@@ -139,7 +136,7 @@
                                             </path>
                                         </svg>
                                         <span style="font-weight: 600; color: #0366d6;">
-                                            <p>Ejercicios P5</p>
+                                            <p>{{ $t('p5exercises') }}</p>
                                         </span>
                                 </div>
                                 <div style="font-size: 12px; margin-bottom: 16px; margin-top: 8px; color: #586069;"></div>
@@ -173,7 +170,7 @@
                         </a>
                         </div>
                     <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                        <h3 class="subArticulo">Pagina web para gestionar tareas con el uso de localStorage.</h3>
+                        <h3 class="subArticulo">{{ $t('todoAppDesc') }}</h3>
                     </div>
                     <a title="Todo App" href="https://github.com/bbauti/p5todoapp" target="_blank" rel="noopener noreferrer">
                         <div class="git">
@@ -219,7 +216,7 @@
                         </a>
                     </div>
                     <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                        <h3 class="subArticulo">Pagina web para obtener informacion sobre el pronostico actual.</h3>
+                        <h3 class="subArticulo">{{ $t('weatherChannelDesc') }}</h3>
                     </div>
                     <a title="Weather Channel" href="https://github.com/bbauti/p5weatherChannel" target="_blank" rel="noopener noreferrer">
                         <div class="git">
@@ -265,7 +262,7 @@
                         </a>
                     </div>
                     <div style="display: flex; flex-direction: row; margin: 0.5rem 1rem; align-items: center;">
-                        <h3 class="subArticulo">El juego Color Game. Se trata sobre adivinar un color en formato rgb, con unos cuadrados de colores aleatorios.</h3>
+                        <h3 class="subArticulo">{{ $t('colorGameDesc') }}</h3>
                     </div>
                     <a title="Color Game" href="https://github.com/bbauti/p5colorgame" target="_blank" rel="noopener noreferrer">
                         <div class="git">

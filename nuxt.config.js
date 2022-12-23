@@ -61,7 +61,32 @@ export default {
     '@nuxtjs/sitemap',
     '@aceforth/nuxt-optimized-images',
     'nuxt-speedkit',
+    '@nuxtjs/i18n',
   ],
+
+  i18n: {
+    locales: [
+        {
+          code: 'en',
+          file: 'en-US.js'
+        },
+        {
+          code: 'es',
+          file: 'es-ES.js'
+        }
+      ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'es',
+    vueI18n: {
+        fallbackLocale: 'es',
+    },
+    detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected',
+        redirectOn: 'root',
+    }
+  },
 
   image: {
     gumlet: {

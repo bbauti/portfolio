@@ -5,7 +5,7 @@
             data-aos="fade-in"
             class="subtitulo"
 			id="contact">
-			Contactame!
+			{{ $t('contactMe') }}
 		</section>
         <form accept-charset="UTF-8" v-on:submit.prevent="onSubmit()" method="POST">
             <div class="columns">
@@ -17,7 +17,7 @@
                                     <div class="field-body">
                                         <div class="field is-narrow">
                                             <div class="control">
-                                                <input type="email" v-model="email" class="form-control" placeholder="Correo" required>
+                                                <input type="email" v-model="email" class="form-control" :placeholder="$t('email')" required>
                                             </div>
                                         </div>
                                     </div>
@@ -32,7 +32,7 @@
                                     <div class="field-body">
                                         <div class="field is-narrow">
                                             <div class="control">
-                                                <input type="text" v-model="name" class="form-control" placeholder="Nombre" required>
+                                                <input type="text" v-model="name" class="form-control" :placeholder="$t('name')" required>
                                             </div>
                                         </div>
                                     </div>
@@ -48,7 +48,7 @@
                             <div class="field-body" style="height:100%;">
                                 <div class="field">
                                     <div class="control" style="height:100%;">
-                                        <textarea type="text" v-model="message" class="form-control" placeholder="Mensaje" required style="height:100%;" cols="24" rows="4" wrap="soft"></textarea>
+                                        <textarea type="text" v-model="message" class="form-control" :placeholder="$t('message')" required style="height:100%;" cols="24" rows="4" wrap="soft"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +62,8 @@
                     <section data-aos="zoom-in" data-aos-delay="300"  data-aos-offset="-50">
                         <div class="contact" style="height: 100%;">
                             <div :class="{'enviar--submit': isSuccess, 'enviar': !isSuccess }">
-                                <div class="success" v-if="isSuccess">Recibi tu consulta, gracias!</div>
-                                <button type="submit" class="boton--enviar" v-if="!isSuccess">Enviar</button>
+                                <div class="success" v-if="isSuccess">{{ $t('answer') }}</div>
+                                <button type="submit" class="boton--enviar" v-if="!isSuccess">{{ $t('send') }}</button>
                             </div>
                         </div>
 			        </section>

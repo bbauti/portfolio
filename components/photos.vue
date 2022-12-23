@@ -2,7 +2,7 @@
 	<div id="photosSection">
 		<section style="margin-top:15vh; margin-bottom: 5vh; text-align: center;" data-aos="fade-in" class="subtitulo"
 			id="artist">
-			Mis diseños
+			{{ $t('art') }}
 		</section>
 		<div class="columns is-multiline">
             <div class="column is-one-quarter-desktop is-half-tablet">

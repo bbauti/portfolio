@@ -1,0 +1,26 @@
+export default {
+    welcome: 'Hola! Soy',
+    a: 'Un',
+    developer: 'desarrollador',
+    and: 'y',
+    artist: 'artista.',
+    proyects: 'Algunos de mis proyectos',
+    portfolioDesc: "Estas en esta aplicacion web, creada para demostrar mis habilidades",
+    inventoryAppDesc: "Aplicacion web con fines para el manejo de stock, creado usando la metodologia Agile y Scrum con un equipo de 7 personas. Cumpli las funciones de Developer y DevOps",
+    p5exercises: 'Ejercicios P5',
+    p5exercisesDesc: 'Sitio web estatico para ir a los diversos ejercicios que realice del curso introductorio de Plataforma 5.',
+    todoAppDesc: 'Pagina web para gestionar tareas con el uso de localStorage.',
+    weatherChannelDesc: 'Pagina web para obtener informacion sobre el pronostico actual.',
+    colorGameDesc: 'El juego Color Game. Se trata sobre adivinar un color en formato rgb, con unos cuadrados de colores aleatorios.',
+    art: 'Mis diseños',
+    programming: 'Programacion',
+    design: 'Arte',
+    contact: 'Contacto',
+    contactMe: 'Contactame!',
+    email: 'Correo',
+    name: 'Nombre',
+    message: 'Mensaje',
+    answer: 'Recibi tu consulta, gracias!',
+    send: 'Enviar'
+}
+
