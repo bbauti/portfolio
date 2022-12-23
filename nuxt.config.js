@@ -49,7 +49,6 @@ export default {
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
     '@nuxtjs/pwa',
-    'nuxt-webpack-optimisations',
     '@nuxtjs/fontawesome',
   ],
 
@@ -59,7 +58,6 @@ export default {
     'vue-scrollto/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
-    '@aceforth/nuxt-optimized-images',
     'nuxt-speedkit',
     '@nuxtjs/i18n',
     'nuxt-viewport',
