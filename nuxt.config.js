@@ -60,16 +60,11 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@aceforth/nuxt-optimized-images',
-    '@twicpics/components/nuxt2',
   ],
 
-  twicpics: {
-    domain: 'https://bbauti.twic.pics',
-  },
-
   image: {
-    twicpics: {
-      baseURL: "https://bbauti.twic.pics"
+    gumlet: {
+      baseURL: 'https://bbauti.gumlet.io/'
     }
   },
 
