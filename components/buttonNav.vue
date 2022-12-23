@@ -21,7 +21,7 @@ export default defineComponent({
     <div id="buttons" class="langbuttons" v-if="$viewport.isLessThan('desktop')">
 
         <nuxt-link
-            v-if="$i18n.locale !== 'en'"
+            v-show="($i18n.locale !== 'en')"
             :to="switchLocalePath('en')"
             id="lang"
             class="noSelect"
@@ -30,7 +30,7 @@ export default defineComponent({
         </nuxt-link>
 
         <nuxt-link
-            v-if="$i18n.locale !== 'es'"
+            v-show="($i18n.locale !== 'es')"
             :to="switchLocalePath('es')"
             id="lang"
             class="noSelect"
