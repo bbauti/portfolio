@@ -18,24 +18,26 @@ export default defineComponent({
 </script>
 
 <template>
-    <div id="buttons" class="langbuttons" v-if="$viewport.isLessThan('desktop')">
+    <ClientOnly>
+        <div id="buttons" class="langbuttons" v-if="$viewport.isLessThan('desktop')">
 
-        <nuxt-link
-            v-show="($i18n.locale !== 'en')"
-            :to="switchLocalePath('en')"
-            id="lang"
-            class="noSelect"
-        >
-            <span style="color: white;">E</span><span style="color: #3c3b6e;">N</span><span style="color: #b22234;">G</span>
-        </nuxt-link>
+            <nuxt-link
+                v-show="($i18n.locale !== 'en')"
+                :to="switchLocalePath('en')"
+                id="lang"
+                class="noSelect"
+            >
+                <span style="color: white;">E</span><span style="color: #3c3b6e;">N</span><span style="color: #b22234;">G</span>
+            </nuxt-link>
 
-        <nuxt-link
-            v-show="($i18n.locale !== 'es')"
-            :to="switchLocalePath('es')"
-            id="lang"
-            class="noSelect"
-        >
-            <span style="color: #75aadb;">E</span><span style="color: #ffffff;">S</span><span style="color: #75aadb;">P</span>
-        </nuxt-link>
-    </div>
+            <nuxt-link
+                v-show="($i18n.locale !== 'es')"
+                :to="switchLocalePath('es')"
+                id="lang"
+                class="noSelect"
+            >
+                <span style="color: #75aadb;">E</span><span style="color: #ffffff;">S</span><span style="color: #75aadb;">P</span>
+            </nuxt-link>
+        </div>
+    </ClientOnly>
 </template>
