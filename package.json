@@ -21,6 +21,7 @@
     "buefy": "^0.9.22",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
+    "nuxt-speedkit": "^2.1.2",
     "vue-template-compiler": "^2.7.14",
     "webpack": "^4.0.0"
   },

@@ -60,12 +60,44 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@aceforth/nuxt-optimized-images',
+    'nuxt-speedkit',
   ],
 
   image: {
     gumlet: {
       baseURL: 'https://bbauti.gumlet.io/'
     }
+  },
+
+  speedkit: {
+
+    detection: {
+      performance: true,
+      browserSupport: true
+    },
+
+    performanceMetrics: {
+      device: {
+        hardwareConcurrency: { min: 2, max: 48 },
+        deviceMemory: { min: 2 }
+      },
+      timing: {
+        fcp: 800,
+        dcl: 1200
+      }
+    },
+
+    lazyOffset: {
+      component: '0%',
+      asset: '0%'
+    },
+
+    loader: {
+      dataUri: null,
+      size: '100px',
+      backgroundColor: 'grey'
+    }
+
   },
 
   sitemap: {
