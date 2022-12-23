@@ -15,6 +15,7 @@
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@twicpics/components": "^0.14.2",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "buefy": "^0.9.22",

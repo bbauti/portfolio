@@ -9,7 +9,6 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    script: [{src: 'https://tarptaeya.github.io/repo-card/repo-card.js'}],
     bodyAttrs: {
       class: 'noise'
     },
@@ -61,7 +60,18 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@aceforth/nuxt-optimized-images',
+    '@twicpics/components/nuxt2',
   ],
+
+  twicpics: {
+    domain: 'https://bbauti.twic.pics',
+  },
+
+  image: {
+    twicpics: {
+      baseURL: "https://bbauti.twic.pics"
+    }
+  },
 
   sitemap: {
     hostname: 'https://bbauti.github.io/portfolio',
