@@ -44,16 +44,16 @@
                 <div class="column is-full-mobile">
                     <section data-aos="zoom-in" data-aos-delay="300" style="height:100%">
                         <div class="cuadrado" style="height: 100%;">
-                        <div class="field">
-                            <div class="field-body" style="height:100%;">
-                                <div class="field">
-                                    <div class="control" style="height:100%;">
-                                        <textarea type="text" v-model="message" class="form-control" :placeholder="$t('message')" required style="height:100%;" cols="24" rows="4" wrap="soft"></textarea>
+                            <div class="field">
+                                <div class="field-body" style="height:100%;">
+                                    <div class="field">
+                                        <div class="control" style="height:100%;">
+                                            <textarea type="text" v-model="message" class="form-control" :placeholder="$t('message')" required style="height:100%;" cols="24" rows="4" wrap="soft"></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 			        </section>
                 </div>
             </div>

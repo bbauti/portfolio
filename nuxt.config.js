@@ -62,6 +62,8 @@ export default {
     '@nuxtjs/i18n',
     'nuxt-viewport',
     '@nuxtjs/composition-api/module',
+    'nuxt-precompress',
+    '@nuxtjs/component-cache',
   ],
 
   i18n: {
@@ -111,6 +113,32 @@ export default {
         dcl: 1200
       }
     },
+
+    fonts: [{
+      family: 'Oxygen',
+      locals: ['Oxygen'],
+      fallback: ['Arial', 'sans-serif'],
+      variances: [
+        {
+          style: 'normal',
+          weight: 400,
+          sources: [
+            { src: '@/assets/rifton.ttf', type:'ttf' },
+          ]
+        }, {
+          style: 'normal',
+          weight: 700,
+          sources: [
+            { src: '@/assets/rifton.ttf', type:'ttf' },
+          ]
+        }
+      ]
+    }],
+
+    targetFormats: ['webp', 'avif', 'jpg|jpeg|png|gif'],
+
+    componentAutoImport: false,
+    componentPrefix: undefined,
 
     lazyOffset: {
       component: '0%',
