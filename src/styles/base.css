@@ -1,0 +1,5 @@
+@import '@fontsource/atkinson-hyperlegible';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
