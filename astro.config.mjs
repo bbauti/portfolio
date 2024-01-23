@@ -15,7 +15,7 @@ export default defineConfig({
     port: 4321,
     acceptCloudflareNotice: true
   })],
-  output: 'static',
+  output: 'server',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
