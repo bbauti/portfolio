@@ -16,7 +16,7 @@ export default defineConfig({
     acceptCloudflareNotice: true
   })],
   output: 'static',
-  adapter: vercel({
+  adapter: vercelStatic({
     webAnalytics: {
       enabled: true,
     },
