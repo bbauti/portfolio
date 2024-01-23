@@ -1,3 +1,15 @@
 {
-  "extends": "astro/tsconfigs/base"
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": "/home/bauti/dev/portfolio",
+    "paths": {
+      "@*": [
+        "src/*"
+      ],
+      "@/*": ["src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/utils/*": ["./src/lib/utils/*"]
+    },
+    "jsx": "preserve"
+  }
 }

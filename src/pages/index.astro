@@ -1,7 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import Dialog from "@/components/Dialog.vue"
+
+import { getCollection } from "astro:content";
+const proyects = await getCollection("proyects");
 ---
 
-<Layout>
-	{Array.from({ length: 50 }).map((_, index) => <div>a</div>)}
+<Layout title="test">
+  Hola
 </Layout>
