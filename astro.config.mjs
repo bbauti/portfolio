@@ -4,7 +4,7 @@ import icon from "astro-icon";
 import vue from "@astrojs/vue";
 import tunnel from "astro-tunnel";
 
-import vercelStatic from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     acceptCloudflareNotice: true
   })],
   output: 'static',
-  adapter: vercelStatic({
+  adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
