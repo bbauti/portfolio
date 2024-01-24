@@ -4,8 +4,8 @@ import icon from "astro-icon";
 import vue from "@astrojs/vue";
 import tunnel from "astro-tunnel";
 
-import vercel from '@astrojs/vercel/serverless';
-
+import vercel from '@astrojs/vercel/static';
+  
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind({
@@ -15,11 +15,10 @@ export default defineConfig({
     port: 4321,
     acceptCloudflareNotice: true
   })],
-  output: 'server',
+  output: 'static',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
-    maxDuration: 8,
   }),
 });

@@ -1,10 +1,13 @@
 <script setup>
 import { Icon } from '@iconify/vue';
 import { Button } from '@/components/ui/button'
+import { useWindowSize } from '@vueuse/core'
 
 import Dropdown from '@/components/Dropdown.vue'
 
 import eventBus from '@/lib/event-bus.js';
+
+const { width } = useWindowSize()
 
 const openCommand = () => {
   eventBus.emit("openCommand");
@@ -26,18 +29,19 @@ const openCommand = () => {
       </Button>
     </section>
     <button 
-      class='bg-primary/5 backdrop-blur-sm border border-primary/10 active:scale-[0.99] hover:bg-primary/10 active:bg-primary/15 transition-all ease-in-out shadow-sm w-60 h-9 rounded-md flex items-center justify-between px-2' 
+      class='w-fit md:w-60 h-9 bg-primary/5 backdrop-blur-sm border border-primary/10 active:scale-[0.99] hover:bg-primary/10 active:bg-primary/15 transition-all ease-in-out shadow-sm rounded-md flex items-center justify-between px-2' 
       @click='openCommand()'
     >
-    <div class='flex gap-2 items-center'>
+    <div class='flex gap-2 items-center whitespace-nowrap'>
       <Icon icon="mynaui:slash-square" class='h-5 w-5 opacity-50'/>
       Ver comandos
     </div>
-    <kbd
-          class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
-        >
+      <kbd
+        v-show="width > 768"
+        class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
+      >
         Ctrl K
-        </kbd>
+      </kbd>
     </button>
     <Dropdown/>
   </nav>
