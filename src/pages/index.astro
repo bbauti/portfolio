@@ -1,12 +1,14 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-import Dialog from "@/components/Dialog.vue"
+import ProyectCard from "@/components/ProyectCard.vue";
 
 import { getCollection } from "astro:content";
 const proyects = await getCollection("proyects");
 ---
 
 <Layout title="test">
-  Pagina de inicio
+  <section class="mx-auto prose prose-lg">
+    {proyects.map((post) => <ProyectCard proyect={post} />)}
+  </section>
 </Layout>

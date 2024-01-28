@@ -4,10 +4,10 @@ import { Icon } from "astro-icon/components";
 
 import "@fontsource/atkinson-hyperlegible";
 import "../styles/base.css";
-import "github-markdown-css"
+import "github-markdown-css";
 
-import CommandDialog from "@/components/CommandDialog.vue"
-import Navbar from "@/components/Navbar.vue"
+import CommandDialog from "@/components/CommandDialog.vue";
+import Navbar from "@/components/Navbar.vue";
 
 import { getCollection } from "astro:content";
 const proyects = await getCollection("proyects");
@@ -17,12 +17,26 @@ const proyects = await getCollection("proyects");
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://localhost:8098"></script>
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P1YXV4WM1G"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-P1YXV4WM1G");
+    </script>
     <title>{title}</title>
   </head>
   <body>
-    <Navbar client:load/>
-    <CommandDialog client:load proyects={proyects}/>
-    <article>
+    <Navbar client:load />
+    <CommandDialog client:load proyects={proyects} />
+    <article class="mt-16 px-5">
       <slot />
     </article>
   </body>

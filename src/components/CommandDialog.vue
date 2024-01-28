@@ -58,9 +58,6 @@ eventBus.on("openCommand", () => {
   open.value = true
 });
 
-const test = () => {
-  console.log('focus')
-}
 </script>
 
 <template>
@@ -109,3 +106,11 @@ const test = () => {
     </CommandDialog>
   </section>
 </template>
+
+<style>
+@media only screen and (max-width: 640px) {
+  [data-dismissable-layer] {
+    max-width: 90%
+  }
+}
+</style>

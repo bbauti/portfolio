@@ -41,9 +41,9 @@ const setLanguage = (lang) => {
       <Button 
         variant="outline" 
         role="combobox" 
-        class='w-fit pr-7 md:w-28 md:pr-0 font-normal bg-primary/5 backdrop-blur-sm border border-primary/10 active:scale-[0.99] hover:bg-primary/10 active:bg-primary/15 flex justify-start gap-2 relative'
+        class='w-fit pr-7 md:w-28 md:pr-0 font-normal bg-background/40 backdrop-blur-sm border border-background/10 active:scale-[0.99] hover:bg-background/20 active:bg-background/10 flex justify-start gap-2 relative'
       >
-        {{ currentLanguage ? (width > 768 ? currentLanguage.label : currentLanguage.label.substr(0, 3)) : 'Idioma' }}
+        <p v-html="currentLanguage ? `${currentLanguage.label.substr(0, 3)}<span class='hidden md:inline-block'>${currentLanguage.label.substr(3)}</span>` : 'Idioma'"></p>
         <Icon icon="fluent:chevron-up-down-16-regular" class='ml-2 h-4 w-4 absolute right-2 shrink-0 opacity-50'/>
       </Button>
     </PopoverTrigger>
@@ -59,7 +59,7 @@ const setLanguage = (lang) => {
                 setLanguage(language)
               }"
             >
-              <Icon icon="fluent:checkmark-12-regular" :class="cn('mr-2 h-4 w-4', language.value === currentLanguage.value ? 'opacity-100' : 'opacity-0')"/>
+              <Icon icon="fluent:checkmark-12-regular" :class="cn('mr-2 h-4 w-4', language.value === currentLanguage.value ? 'opacity-100 scale-1' : 'opacity-0 scale-0')" class="transition-all ease-in-out"/>
               {{ width > 768 ? language.label : language.label.substr(0, 3) }}
             </CommandItem>
           </CommandGroup>
