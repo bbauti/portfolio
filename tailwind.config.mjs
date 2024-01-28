@@ -1,15 +1,15 @@
 import animate from "tailwindcss-animate"
-import typography from '@tailwindcss/typography' 
+import typography from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   safelist: ["dark"],
-  
-    content: [
-      './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
-    ],
-  
+
+  content: [
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+  ],
+
   theme: {
     container: {
       center: true,
@@ -82,6 +82,9 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
+      },
+      screens: {
+        'mobile': { 'raw': '(pointer: coarse)' },
       },
     },
   },

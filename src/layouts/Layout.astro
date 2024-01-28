@@ -36,8 +36,20 @@ const proyects = await getCollection("proyects");
   <body>
     <Navbar client:load />
     <CommandDialog client:load proyects={proyects} />
-    <article class="mt-16 px-5">
+    <article class="mt-16 px-5 pt-5">
       <slot />
     </article>
   </body>
 </html>
+
+<style>
+  article {
+    margin-top: 4rem;
+  }
+
+  @media (pointer: coarse) {
+    article {
+      margin-top: unset;
+    }
+  }
+</style>
