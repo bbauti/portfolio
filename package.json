@@ -27,6 +27,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "daisyui": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.14.1",
     "github-markdown-css": "^5.5.0",
     "lucide-vue-next": "^0.316.0",
     "mitt": "^3.0.1",
@@ -41,5 +42,10 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.64",
     "vite-plugin-vue-devtools": "^7.0.13"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "tailwindcss"
+    ]
   }
 }

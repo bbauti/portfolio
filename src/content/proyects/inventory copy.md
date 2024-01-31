@@ -1,10 +1,10 @@
 ---
 title: "Dashboard"
-pubDate: 2022-07-01
+pubDate: 2021-07-01
 description: "Dashboard de eCommerce"
 cover: "./dashboard_front.png"
 coverAlt: "The full Astro logo."
-color: "#ed3e32"
+color: "#6132ed"
 ---
 
 # Punto Bazar 🛒
@@ -66,7 +66,3 @@ Para el codigo de invitacion de la demo, pedinoslo por MD a mi o a Pato.
 ## 📝 Feedback
 
 Si tenes alguna sugerencia, no dudes en abrir un issue o un fork y enviar un pull request!
-
-
-
-

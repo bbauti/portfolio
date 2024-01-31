@@ -1,5 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { Debug } from "astro:components";
 
 import ProyectCard from "@/components/ProyectCard.vue";
 
@@ -8,7 +10,19 @@ const proyects = await getCollection("proyects");
 ---
 
 <Layout title="test">
-  <section class="mx-auto prose prose-lg">
-    {proyects.map((post) => <ProyectCard proyect={post} />)}
+  <section class="mx-auto prose prose-lg flex flex-col gap-8 mb-8">
+    {
+      proyects.map((proyect) => (
+        <>
+          <ProyectCard proyect={proyect}>
+            <Image
+              src={proyect.data.cover}
+              alt={proyect.data.coverAlt}
+              class="rounded-t-sm shadow-xl shadow-black/30"
+            />
+          </ProyectCard>
+        </>
+      ))
+    }
   </section>
 </Layout>

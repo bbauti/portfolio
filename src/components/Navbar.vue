@@ -15,23 +15,23 @@ const openCommand = () => {
 </script>
 
 <template>
-  <nav class='fixed left-[50%] translate-x-[-50%] flex gap-4 items-center'>
+  <nav class='fixed left-[50%] translate-x-[-50%] z-50 flex gap-4 items-center'>
     <section class='flex gap-2'>
       <Button variant="outline" size="icon"
-        class='bg-background/40 backdrop-blur-sm border border-background/10 active:scale-[0.99] hover:bg-background/20 active:bg-background/10'>
+        class='bg-background/40 backdrop-blur-sm border border-accent/35 active:scale-[0.99] hover:bg-background/20 active:bg-background/10'>
         <a href='https://github.com/bbauti/' class='w-full h-full flex items-center justify-center'>
           <Github size="5" classes="opacity-80" />
         </a>
       </Button>
       <Button variant="outline" size="icon"
-        class='bg-background/40 backdrop-blur-sm border border-background/10 active:scale-[0.99] hover:bg-background/20 active:bg-background/10'>
+        class='bg-background/40 backdrop-blur-sm border border-accent/35 active:scale-[0.99] hover:bg-background/20 active:bg-background/10'>
         <a href='https://www.linkedin.com/in/bbauti/' class='w-full h-full flex items-center justify-center'>
           <Linkedin size="5" classes="opacity-80" />
         </a>
       </Button>
     </section>
     <button
-      class='w-fit md:w-60 h-9 bg-background/40 backdrop-blur-sm border border-background/10 active:scale-[0.99] hover:bg-background/20 active:bg-background/10 transition-all ease-in-out shadow-sm rounded-md flex items-center justify-between px-2'
+      class='w-fit md:w-60 h-9 bg-background/40 backdrop-blur-sm border border-accent/35 active:scale-[0.99] hover:bg-background/20 active:bg-background/10 transition-all ease-in-out shadow-sm rounded-md flex items-center justify-between px-2'
       @click='openCommand()'>
       <div class='flex gap-2 items-center whitespace-nowrap'>
         <Command size="5" classes="opacity-80" />
