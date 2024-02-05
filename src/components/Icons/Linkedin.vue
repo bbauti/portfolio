@@ -2,7 +2,7 @@
 const { size, classes } = defineProps({
 	size: String,
 	classes: String
-})
+});
 </script>
 
 <template>

@@ -10,15 +10,15 @@ const proyects = await getCollection("proyects");
 ---
 
 <Layout title="test">
-  <section class="mx-auto prose prose-lg flex flex-col gap-8 mb-8">
+  <section class="mx-auto prose prose-lg flex flex-col gap-2 mb-8">
     {
       proyects.map((proyect) => (
         <>
-          <ProyectCard proyect={proyect}>
+          <ProyectCard proyect={proyect} client:load>
             <Image
               src={proyect.data.cover}
               alt={proyect.data.coverAlt}
-              class="rounded-t-sm shadow-xl shadow-black/30"
+              class="rounded-sm object-cover object-top shadow-xl shadow-black/30 aspect-video"
             />
           </ProyectCard>
         </>

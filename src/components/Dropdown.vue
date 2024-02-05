@@ -42,20 +42,21 @@ const setLanguage = (lang) => {
   <Popover>
     <PopoverTrigger as-child>
       <Button variant="outline" role="combobox"
-        class='w-fit pr-7 md:w-28 md:pr-0 font-normal bg-background/40 backdrop-blur-sm border border-accent/35 active:scale-[0.99] hover:bg-background/20 active:bg-background/10 flex justify-start gap-2 relative'>
-        <p v-if="currentLanguage">
+        class='w-fit pr-7 md:w-28 md:pr-0 btn-nav flex justify-start gap-2 relative'>
+        <p v-if="currentLanguage" class="font-normal">
           {{ currentLanguage.label.slice(0, 3) }}<span class='hidden md:inline-block'>{{
             currentLanguage.label.slice(3)}}</span>
         </p>
-        <p v-else>Idioma</p>
+        <p v-else class="font-normal">Idioma</p>
         <UpDown size="4" classes="ml-2 absolute right-2 shrink-0 opacity-50" />
       </Button>
     </PopoverTrigger>
     <PopoverContent class="w-fit md:w-[200px] p-0 max-w-none">
-      <Command>
+      <Command class="bg-secondary/80">
         <CommandList>
           <CommandGroup>
-            <CommandItem v-for="language in languages" :key="language.value" :value="language.label" @select="() => {
+            <CommandItem class="hover:!bg-secondary" v-for="language in languages" :key="language.value"
+              :value="language.label" @select="() => {
                 setLanguage(language)
               }">
               <Icon icon="fluent:checkmark-12-regular"
